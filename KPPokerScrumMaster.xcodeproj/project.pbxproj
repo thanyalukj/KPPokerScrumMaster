@@ -1,0 +1,435 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9CE591E519D988DD00447DE2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE591E419D988DD00447DE2 /* main.m */; };
+		9CE591E819D988DD00447DE2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE591E719D988DD00447DE2 /* AppDelegate.m */; };
+		9CE591EB19D988DD00447DE2 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE591EA19D988DD00447DE2 /* MasterViewController.m */; };
+		9CE591EE19D988DD00447DE2 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE591ED19D988DD00447DE2 /* DetailViewController.m */; };
+		9CE591F119D988DD00447DE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CE591EF19D988DD00447DE2 /* Main.storyboard */; };
+		9CE591F319D988DD00447DE2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CE591F219D988DD00447DE2 /* Images.xcassets */; };
+		9CE591F619D988DD00447DE2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CE591F419D988DD00447DE2 /* LaunchScreen.xib */; };
+		9CE5920219D988DD00447DE2 /* KPPokerScrumMasterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE5920119D988DD00447DE2 /* KPPokerScrumMasterTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9CE591FC19D988DD00447DE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9CE591D719D988DD00447DE2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9CE591DE19D988DD00447DE2;
+			remoteInfo = KPPokerScrumMaster;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9CE591DF19D988DD00447DE2 /* KPPokerScrumMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KPPokerScrumMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CE591E319D988DD00447DE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CE591E419D988DD00447DE2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9CE591E619D988DD00447DE2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9CE591E719D988DD00447DE2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9CE591E919D988DD00447DE2 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		9CE591EA19D988DD00447DE2 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		9CE591EC19D988DD00447DE2 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		9CE591ED19D988DD00447DE2 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		9CE591F019D988DD00447DE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9CE591F219D988DD00447DE2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9CE591F519D988DD00447DE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		9CE591FB19D988DD00447DE2 /* KPPokerScrumMasterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KPPokerScrumMasterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CE5920019D988DD00447DE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CE5920119D988DD00447DE2 /* KPPokerScrumMasterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KPPokerScrumMasterTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9CE591DC19D988DD00447DE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CE591F819D988DD00447DE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9CE591D619D988DD00447DE2 = {
+			isa = PBXGroup;
+			children = (
+				9CE591E119D988DD00447DE2 /* KPPokerScrumMaster */,
+				9CE591FE19D988DD00447DE2 /* KPPokerScrumMasterTests */,
+				9CE591E019D988DD00447DE2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9CE591E019D988DD00447DE2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9CE591DF19D988DD00447DE2 /* KPPokerScrumMaster.app */,
+				9CE591FB19D988DD00447DE2 /* KPPokerScrumMasterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9CE591E119D988DD00447DE2 /* KPPokerScrumMaster */ = {
+			isa = PBXGroup;
+			children = (
+				9CE591E619D988DD00447DE2 /* AppDelegate.h */,
+				9CE591E719D988DD00447DE2 /* AppDelegate.m */,
+				9CE591E919D988DD00447DE2 /* MasterViewController.h */,
+				9CE591EA19D988DD00447DE2 /* MasterViewController.m */,
+				9CE591EC19D988DD00447DE2 /* DetailViewController.h */,
+				9CE591ED19D988DD00447DE2 /* DetailViewController.m */,
+				9CE591EF19D988DD00447DE2 /* Main.storyboard */,
+				9CE591F219D988DD00447DE2 /* Images.xcassets */,
+				9CE591F419D988DD00447DE2 /* LaunchScreen.xib */,
+				9CE591E219D988DD00447DE2 /* Supporting Files */,
+			);
+			path = KPPokerScrumMaster;
+			sourceTree = "<group>";
+		};
+		9CE591E219D988DD00447DE2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9CE591E319D988DD00447DE2 /* Info.plist */,
+				9CE591E419D988DD00447DE2 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9CE591FE19D988DD00447DE2 /* KPPokerScrumMasterTests */ = {
+			isa = PBXGroup;
+			children = (
+				9CE5920119D988DD00447DE2 /* KPPokerScrumMasterTests.m */,
+				9CE591FF19D988DD00447DE2 /* Supporting Files */,
+			);
+			path = KPPokerScrumMasterTests;
+			sourceTree = "<group>";
+		};
+		9CE591FF19D988DD00447DE2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9CE5920019D988DD00447DE2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9CE591DE19D988DD00447DE2 /* KPPokerScrumMaster */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CE5920519D988DD00447DE2 /* Build configuration list for PBXNativeTarget "KPPokerScrumMaster" */;
+			buildPhases = (
+				9CE591DB19D988DD00447DE2 /* Sources */,
+				9CE591DC19D988DD00447DE2 /* Frameworks */,
+				9CE591DD19D988DD00447DE2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KPPokerScrumMaster;
+			productName = KPPokerScrumMaster;
+			productReference = 9CE591DF19D988DD00447DE2 /* KPPokerScrumMaster.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9CE591FA19D988DD00447DE2 /* KPPokerScrumMasterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CE5920819D988DD00447DE2 /* Build configuration list for PBXNativeTarget "KPPokerScrumMasterTests" */;
+			buildPhases = (
+				9CE591F719D988DD00447DE2 /* Sources */,
+				9CE591F819D988DD00447DE2 /* Frameworks */,
+				9CE591F919D988DD00447DE2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9CE591FD19D988DD00447DE2 /* PBXTargetDependency */,
+			);
+			name = KPPokerScrumMasterTests;
+			productName = KPPokerScrumMasterTests;
+			productReference = 9CE591FB19D988DD00447DE2 /* KPPokerScrumMasterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9CE591D719D988DD00447DE2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = Kotikan;
+				TargetAttributes = {
+					9CE591DE19D988DD00447DE2 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					9CE591FA19D988DD00447DE2 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 9CE591DE19D988DD00447DE2;
+					};
+				};
+			};
+			buildConfigurationList = 9CE591DA19D988DD00447DE2 /* Build configuration list for PBXProject "KPPokerScrumMaster" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9CE591D619D988DD00447DE2;
+			productRefGroup = 9CE591E019D988DD00447DE2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9CE591DE19D988DD00447DE2 /* KPPokerScrumMaster */,
+				9CE591FA19D988DD00447DE2 /* KPPokerScrumMasterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9CE591DD19D988DD00447DE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CE591F119D988DD00447DE2 /* Main.storyboard in Resources */,
+				9CE591F619D988DD00447DE2 /* LaunchScreen.xib in Resources */,
+				9CE591F319D988DD00447DE2 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CE591F919D988DD00447DE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9CE591DB19D988DD00447DE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CE591E819D988DD00447DE2 /* AppDelegate.m in Sources */,
+				9CE591EB19D988DD00447DE2 /* MasterViewController.m in Sources */,
+				9CE591E519D988DD00447DE2 /* main.m in Sources */,
+				9CE591EE19D988DD00447DE2 /* DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CE591F719D988DD00447DE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CE5920219D988DD00447DE2 /* KPPokerScrumMasterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9CE591FD19D988DD00447DE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9CE591DE19D988DD00447DE2 /* KPPokerScrumMaster */;
+			targetProxy = 9CE591FC19D988DD00447DE2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9CE591EF19D988DD00447DE2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9CE591F019D988DD00447DE2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9CE591F419D988DD00447DE2 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9CE591F519D988DD00447DE2 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9CE5920319D988DD00447DE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9CE5920419D988DD00447DE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9CE5920619D988DD00447DE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KPPokerScrumMaster/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9CE5920719D988DD00447DE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KPPokerScrumMaster/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9CE5920919D988DD00447DE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KPPokerScrumMasterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KPPokerScrumMaster.app/KPPokerScrumMaster";
+			};
+			name = Debug;
+		};
+		9CE5920A19D988DD00447DE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KPPokerScrumMasterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KPPokerScrumMaster.app/KPPokerScrumMaster";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9CE591DA19D988DD00447DE2 /* Build configuration list for PBXProject "KPPokerScrumMaster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CE5920319D988DD00447DE2 /* Debug */,
+				9CE5920419D988DD00447DE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CE5920519D988DD00447DE2 /* Build configuration list for PBXNativeTarget "KPPokerScrumMaster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CE5920619D988DD00447DE2 /* Debug */,
+				9CE5920719D988DD00447DE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9CE5920819D988DD00447DE2 /* Build configuration list for PBXNativeTarget "KPPokerScrumMasterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CE5920919D988DD00447DE2 /* Debug */,
+				9CE5920A19D988DD00447DE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9CE591D719D988DD00447DE2 /* Project object */;
+}
