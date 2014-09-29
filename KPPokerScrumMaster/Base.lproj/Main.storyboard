@@ -65,6 +65,9 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Details" id="mOI-FS-AaM"/>
+                    <connections>
+                        <outlet property="collectionView" destination="cNy-4G-wIP" id="fA9-JW-qVi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FJe-Yq-33r" sceneMemberID="firstResponder"/>
             </objects>

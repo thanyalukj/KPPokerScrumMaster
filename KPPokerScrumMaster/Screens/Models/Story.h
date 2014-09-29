@@ -9,4 +9,5 @@
 @interface Story : NSObject
 @property (nonatomic) NSString *title;
 @property (nonatomic) NSDate *date;
+@property (nonatomic) NSMutableArray *userCards;
 @end
