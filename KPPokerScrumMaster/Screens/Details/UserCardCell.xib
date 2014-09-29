@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX">
+            <rect key="frame" x="0.0" y="0.0" width="103" height="136"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="103" height="136"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="user" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yL9-3F-sQj">
+                        <rect key="frame" x="34" y="107" width="34" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="87" placeholderIntrinsicHeight="96" translatesAutoresizingMaskIntoConstraints="NO" id="ZC2-Xt-Dx9">
+                        <rect key="frame" x="8" y="8" width="87" height="96"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="ZC2-Xt-Dx9" secondAttribute="centerX" id="Pdz-1F-8gS"/>
+                <constraint firstAttribute="centerX" secondItem="yL9-3F-sQj" secondAttribute="centerX" constant="0.5" id="eyn-ev-Ihd"/>
+                <constraint firstAttribute="bottom" secondItem="yL9-3F-sQj" secondAttribute="bottom" constant="8" id="tpc-cp-sLH"/>
+                <constraint firstItem="ZC2-Xt-Dx9" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="zgI-Kd-RD7"/>
+            </constraints>
+            <size key="customSize" width="103" height="136"/>
+            <point key="canvasLocation" x="137.5" y="234"/>
+        </collectionViewCell>
+    </objects>
+</document>

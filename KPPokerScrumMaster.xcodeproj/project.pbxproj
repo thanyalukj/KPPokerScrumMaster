@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3044E2095A7795765F9D4EB0 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044E07B8F9AB333624B540D /* Card.m */; };
+		3044E424CBA4C019CB64F8DB /* StoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044EE41EC462DC8369E90FD /* StoryViewController.m */; };
+		3044E63944BB0B769296C88C /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044EEA706533C31A44CCDEE /* DetailViewController.m */; };
+		3044E7A36AC21D5AFDF116C1 /* UserCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044EC50B58D160C1434D40B /* UserCard.m */; };
+		3044EC659CD6AC928ACADFBF /* Story.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044E238A3FF3F4030F78808 /* Story.m */; };
+		3044ED21703A4446F59E4A48 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044E1389979183FB7C39EC0 /* MasterViewController.m */; };
 		9CE591E519D988DD00447DE2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE591E419D988DD00447DE2 /* main.m */; };
 		9CE591E819D988DD00447DE2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE591E719D988DD00447DE2 /* AppDelegate.m */; };
-		9CE591EB19D988DD00447DE2 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE591EA19D988DD00447DE2 /* MasterViewController.m */; };
-		9CE591EE19D988DD00447DE2 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE591ED19D988DD00447DE2 /* DetailViewController.m */; };
 		9CE591F119D988DD00447DE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CE591EF19D988DD00447DE2 /* Main.storyboard */; };
 		9CE591F319D988DD00447DE2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CE591F219D988DD00447DE2 /* Images.xcassets */; };
 		9CE591F619D988DD00447DE2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CE591F419D988DD00447DE2 /* LaunchScreen.xib */; };
 		9CE5920219D988DD00447DE2 /* KPPokerScrumMasterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE5920119D988DD00447DE2 /* KPPokerScrumMasterTests.m */; };
+		9CE5921119D9963500447DE2 /* UserCardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE5920F19D9963500447DE2 /* UserCardCell.m */; };
+		9CE5921219D9963500447DE2 /* UserCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CE5921019D9963500447DE2 /* UserCardCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,21 +34,32 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3044E07B8F9AB333624B540D /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+		3044E1201AEAB030E6C5E973 /* Story.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Story.h; sourceTree = "<group>"; };
+		3044E1389979183FB7C39EC0 /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		3044E238A3FF3F4030F78808 /* Story.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Story.m; sourceTree = "<group>"; };
+		3044E260061967CC7E471996 /* UserCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserCard.h; sourceTree = "<group>"; };
+		3044E3D0D5113EF1D7DE874F /* StoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryViewController.h; sourceTree = "<group>"; };
+		3044E8C75B33D3925DF89778 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		3044EC50B58D160C1434D40B /* UserCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserCard.m; sourceTree = "<group>"; };
+		3044EE41EC462DC8369E90FD /* StoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryViewController.m; sourceTree = "<group>"; };
+		3044EEA706533C31A44CCDEE /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		3044EF5C67D5795643381144 /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		3044EFF881B3D15D93BFB0C3 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		9CE591DF19D988DD00447DE2 /* KPPokerScrumMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KPPokerScrumMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CE591E319D988DD00447DE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CE591E419D988DD00447DE2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9CE591E619D988DD00447DE2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9CE591E719D988DD00447DE2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		9CE591E919D988DD00447DE2 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		9CE591EA19D988DD00447DE2 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		9CE591EC19D988DD00447DE2 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		9CE591ED19D988DD00447DE2 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		9CE591F019D988DD00447DE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9CE591F219D988DD00447DE2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9CE591F519D988DD00447DE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		9CE591FB19D988DD00447DE2 /* KPPokerScrumMasterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KPPokerScrumMasterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CE5920019D988DD00447DE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CE5920119D988DD00447DE2 /* KPPokerScrumMasterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KPPokerScrumMasterTests.m; sourceTree = "<group>"; };
+		9CE5920E19D9963500447DE2 /* UserCardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserCardCell.h; sourceTree = "<group>"; };
+		9CE5920F19D9963500447DE2 /* UserCardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserCardCell.m; sourceTree = "<group>"; };
+		9CE5921019D9963500447DE2 /* UserCardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserCardCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +80,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3044E5AC9A38754A8CE542F8 /* Master */ = {
+			isa = PBXGroup;
+			children = (
+				3044E1389979183FB7C39EC0 /* MasterViewController.m */,
+				3044EF5C67D5795643381144 /* MasterViewController.h */,
+			);
+			path = Master;
+			sourceTree = "<group>";
+		};
+		3044E72D52848DAB3E9770DB /* Story */ = {
+			isa = PBXGroup;
+			children = (
+				3044E3D0D5113EF1D7DE874F /* StoryViewController.h */,
+				3044EE41EC462DC8369E90FD /* StoryViewController.m */,
+			);
+			path = Story;
+			sourceTree = "<group>";
+		};
+		3044E844AD6BCB0F6E8A4DF2 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				3044EEA706533C31A44CCDEE /* DetailViewController.m */,
+				3044EFF881B3D15D93BFB0C3 /* DetailViewController.h */,
+				9CE5920E19D9963500447DE2 /* UserCardCell.h */,
+				9CE5920F19D9963500447DE2 /* UserCardCell.m */,
+				9CE5921019D9963500447DE2 /* UserCardCell.xib */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		3044E91207BBE63875809DB0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3044E238A3FF3F4030F78808 /* Story.m */,
+				3044E1201AEAB030E6C5E973 /* Story.h */,
+				3044EC50B58D160C1434D40B /* UserCard.m */,
+				3044E260061967CC7E471996 /* UserCard.h */,
+				3044E8C75B33D3925DF89778 /* Card.h */,
+				3044E07B8F9AB333624B540D /* Card.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3044EB28D9867A1379132A4A /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				3044E5AC9A38754A8CE542F8 /* Master */,
+				3044E844AD6BCB0F6E8A4DF2 /* Details */,
+				3044E72D52848DAB3E9770DB /* Story */,
+				3044E91207BBE63875809DB0 /* Models */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
 		9CE591D619D988DD00447DE2 = {
 			isa = PBXGroup;
 			children = (
@@ -86,14 +157,11 @@
 			children = (
 				9CE591E619D988DD00447DE2 /* AppDelegate.h */,
 				9CE591E719D988DD00447DE2 /* AppDelegate.m */,
-				9CE591E919D988DD00447DE2 /* MasterViewController.h */,
-				9CE591EA19D988DD00447DE2 /* MasterViewController.m */,
-				9CE591EC19D988DD00447DE2 /* DetailViewController.h */,
-				9CE591ED19D988DD00447DE2 /* DetailViewController.m */,
 				9CE591EF19D988DD00447DE2 /* Main.storyboard */,
 				9CE591F219D988DD00447DE2 /* Images.xcassets */,
 				9CE591F419D988DD00447DE2 /* LaunchScreen.xib */,
 				9CE591E219D988DD00447DE2 /* Supporting Files */,
+				3044EB28D9867A1379132A4A /* Screens */,
 			);
 			path = KPPokerScrumMaster;
 			sourceTree = "<group>";
@@ -207,6 +275,7 @@
 				9CE591F119D988DD00447DE2 /* Main.storyboard in Resources */,
 				9CE591F619D988DD00447DE2 /* LaunchScreen.xib in Resources */,
 				9CE591F319D988DD00447DE2 /* Images.xcassets in Resources */,
+				9CE5921219D9963500447DE2 /* UserCardCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,9 +294,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CE591E819D988DD00447DE2 /* AppDelegate.m in Sources */,
-				9CE591EB19D988DD00447DE2 /* MasterViewController.m in Sources */,
 				9CE591E519D988DD00447DE2 /* main.m in Sources */,
-				9CE591EE19D988DD00447DE2 /* DetailViewController.m in Sources */,
+				3044ED21703A4446F59E4A48 /* MasterViewController.m in Sources */,
+				3044E63944BB0B769296C88C /* DetailViewController.m in Sources */,
+				3044E424CBA4C019CB64F8DB /* StoryViewController.m in Sources */,
+				9CE5921119D9963500447DE2 /* UserCardCell.m in Sources */,
+				3044EC659CD6AC928ACADFBF /* Story.m in Sources */,
+				3044E7A36AC21D5AFDF116C1 /* UserCard.m in Sources */,
+				3044E2095A7795765F9D4EB0 /* Card.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +494,7 @@
 				9CE5920719D988DD00447DE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9CE5920819D988DD00447DE2 /* Build configuration list for PBXNativeTarget "KPPokerScrumMasterTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +503,7 @@
 				9CE5920A19D988DD00447DE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
