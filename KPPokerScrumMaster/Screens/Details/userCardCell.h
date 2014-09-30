@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UserCardCell : UICollectionViewCell
+@class UserCard;
 
+@interface UserCardCell : UICollectionViewCell
+@property (nonatomic) UserCard *userCard;
 @end

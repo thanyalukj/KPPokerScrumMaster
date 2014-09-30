@@ -13,6 +13,7 @@
 		3044E7A36AC21D5AFDF116C1 /* UserCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044EC50B58D160C1434D40B /* UserCard.m */; };
 		3044EC659CD6AC928ACADFBF /* Story.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044E238A3FF3F4030F78808 /* Story.m */; };
 		3044ED21703A4446F59E4A48 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044E1389979183FB7C39EC0 /* MasterViewController.m */; };
+		3044EF03D7DE91B82882990D /* StoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044E8B825B20FA80BFB313E /* StoryTableViewCell.m */; };
 		9CE591E519D988DD00447DE2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE591E419D988DD00447DE2 /* main.m */; };
 		9CE591E819D988DD00447DE2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE591E719D988DD00447DE2 /* AppDelegate.m */; };
 		9CE591F119D988DD00447DE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CE591EF19D988DD00447DE2 /* Main.storyboard */; };
@@ -40,7 +41,9 @@
 		3044E238A3FF3F4030F78808 /* Story.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Story.m; sourceTree = "<group>"; };
 		3044E260061967CC7E471996 /* UserCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserCard.h; sourceTree = "<group>"; };
 		3044E3D0D5113EF1D7DE874F /* StoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryViewController.h; sourceTree = "<group>"; };
+		3044E8B825B20FA80BFB313E /* StoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryTableViewCell.m; sourceTree = "<group>"; };
 		3044E8C75B33D3925DF89778 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		3044E962EC60BB2E6319173A /* StoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryTableViewCell.h; sourceTree = "<group>"; };
 		3044EC50B58D160C1434D40B /* UserCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserCard.m; sourceTree = "<group>"; };
 		3044EE41EC462DC8369E90FD /* StoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryViewController.m; sourceTree = "<group>"; };
 		3044EEA706533C31A44CCDEE /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
@@ -85,6 +88,8 @@
 			children = (
 				3044E1389979183FB7C39EC0 /* MasterViewController.m */,
 				3044EF5C67D5795643381144 /* MasterViewController.h */,
+				3044E8B825B20FA80BFB313E /* StoryTableViewCell.m */,
+				3044E962EC60BB2E6319173A /* StoryTableViewCell.h */,
 			);
 			path = Master;
 			sourceTree = "<group>";
@@ -302,6 +307,7 @@
 				3044EC659CD6AC928ACADFBF /* Story.m in Sources */,
 				3044E7A36AC21D5AFDF116C1 /* UserCard.m in Sources */,
 				3044E2095A7795765F9D4EB0 /* Card.m in Sources */,
+				3044EF03D7DE91B82882990D /* StoryTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

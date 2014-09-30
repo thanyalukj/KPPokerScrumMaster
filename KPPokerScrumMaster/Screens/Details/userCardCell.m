@@ -7,11 +7,23 @@
 //
 
 #import "UserCardCell.h"
+#import "UserCard.h"
+#import "Card.h"
 
-@implementation UserCardCell
+@implementation UserCardCell {    
+    __weak IBOutlet UILabel *_userLabel;
+    __weak IBOutlet UIImageView *_cardImageView;
+}
 
 - (void)awakeFromNib {
-    // Initialization code
+    [super awakeFromNib];
+}
+
+- (void)setUserCard:(UserCard *)userCard {
+    _userCard = userCard;
+    _userLabel.text = _userCard.username;
+    NSString *imageName = [NSString stringWithFormat:@"card_%@", @"?"];
+    _cardImageView.image = [UIImage imageNamed:imageName];
 }
 
 @end
