@@ -9,7 +9,6 @@
 #import "UserCardCell.h"
 #import "UserCard.h"
 #import "Card.h"
-#import "SessionModel.h"
 #import "BaseSession.h"
 
 @implementation UserCardCell {    

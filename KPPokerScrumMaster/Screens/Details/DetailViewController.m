@@ -13,7 +13,6 @@
 #import "SessionsTable.h"
 #import "UserCard.h"
 #import "Card.h"
-#import "SessionModel.h"
 #import "BaseSession.h"
 
 @interface DetailViewController () <UICollectionViewDataSource, UICollectionViewDelegate, SessionsInteracting>
