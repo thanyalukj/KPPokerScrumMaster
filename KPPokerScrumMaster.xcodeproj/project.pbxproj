@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		3044E0A36F0A520A177B8BB7 /* UserCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044E05A7A27F560152D9607 /* UserCard.m */; };
 		3044E424CBA4C019CB64F8DB /* StoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044EE41EC462DC8369E90FD /* StoryViewController.m */; };
-		3044E4B93A00085C958550E4 /* SessionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044E0FAE1C0F803CC07AA12 /* SessionModel.m */; };
 		3044E63944BB0B769296C88C /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044EEA706533C31A44CCDEE /* DetailViewController.m */; };
 		3044E7EBB144C1EBFD33A3E2 /* StoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044E2DC74FC6E7F27FDF2EE /* StoryModel.m */; };
 		3044ED21703A4446F59E4A48 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044E1389979183FB7C39EC0 /* MasterViewController.m */; };
@@ -50,10 +49,8 @@
 
 /* Begin PBXFileReference section */
 		3044E05A7A27F560152D9607 /* UserCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserCard.m; sourceTree = "<group>"; };
-		3044E0FAE1C0F803CC07AA12 /* SessionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionModel.m; sourceTree = "<group>"; };
 		3044E1389979183FB7C39EC0 /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
 		3044E190D4957B0338F87E95 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
-		3044E28F51B9F839432C0DFB /* SessionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SessionModel.h; sourceTree = "<group>"; };
 		3044E2DC74FC6E7F27FDF2EE /* StoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryModel.m; sourceTree = "<group>"; };
 		3044E3D0D5113EF1D7DE874F /* StoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryViewController.h; sourceTree = "<group>"; };
 		3044E8B825B20FA80BFB313E /* StoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryTableViewCell.m; sourceTree = "<group>"; };
@@ -175,8 +172,6 @@
 				3044E190D4957B0338F87E95 /* Card.m */,
 				3044E2DC74FC6E7F27FDF2EE /* StoryModel.m */,
 				3044EBAFE9F9EC481D4FFDC1 /* StoryModel.h */,
-				3044E0FAE1C0F803CC07AA12 /* SessionModel.m */,
-				3044E28F51B9F839432C0DFB /* SessionModel.h */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -444,7 +439,6 @@
 				3044E0A36F0A520A177B8BB7 /* UserCard.m in Sources */,
 				3044EFEC56B566A8AEF4E0D0 /* Card.m in Sources */,
 				3044E7EBB144C1EBFD33A3E2 /* StoryModel.m in Sources */,
-				3044E4B93A00085C958550E4 /* SessionModel.m in Sources */,
 				ACD09912826389A8C61A5132 /* BaseSession.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
