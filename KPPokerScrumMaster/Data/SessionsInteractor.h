@@ -17,4 +17,6 @@
 
 - (instancetype)initWithSessionId:(NSString *)sessionId;
 
+- (void)start;
+
 @end

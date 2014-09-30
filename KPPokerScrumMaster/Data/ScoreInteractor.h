@@ -17,4 +17,6 @@
 
 - (instancetype)initWithStoryId:(NSString *)storyId;
 
+- (void)start;
+
 @end
