@@ -7,12 +7,9 @@
 //
 
 #import "DetailViewController.h"
-#import "Story.h"
-#import "UserCard.h"
-#import "UserCardCell.h"
-#import "Card.h"
+#import "StoryModel.h"
 
-@interface DetailViewController () <UICollectionViewDataSource, UICollectionViewDelegate>
+@interface DetailViewController () <UICollectionViewDataSource, UICollisionBehaviorDelegate>
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 
 @end
@@ -28,53 +25,48 @@
 }
 
 - (void)configureCollectionView {
-    UINib *cellNib = [UINib nibWithNibName:@"UserCardCell" bundle:nil];
-    [self.collectionView registerNib:cellNib forCellWithReuseIdentifier:@"userCardCell"];
-    self.collectionView.delegate = self;
-    self.collectionView.dataSource = self;
+
 }
+
 
 #pragma mark - Managing the detail item
 
 - (void)setDetailStory:(id)newDetailStory {
     if (_detailStory != newDetailStory) {
         _detailStory = newDetailStory;
-
+            
+        // Update the view.
         [self configureView];
     }
 }
 
 - (void)configureView {
     // Update the user interface for the detail item.
-    if (_detailStory) {
-        self.title = _detailStory.title;
-        [self.collectionView reloadData];
+    if (self.detailStory) {
+        self.detailDescriptionLabel.text = [self.detailStory description];
     }
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self configureCollectionView];
+    // Do any additional setup after loading the view, typically from a nib.
     [self configureView];
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - UICollectionView
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return [_detailStory.userCards count];
+    return 0;
 }
 
-static NSString *cellIdentifier = @"userCardCell";
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UserCard *card = _detailStory.userCards[(NSUInteger)indexPath.row];
-    UserCardCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];
-    [cell setUserCard:card];
-    return cell;
+    return nil;
 }
 
-- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    UserCard *card = _detailStory.userCards[(NSUInteger)indexPath.row];
-    _detailStory.score = [[card.card.content stringByReplacingOccurrencesOfString:@"shirt_" withString:@""] uppercaseString];
-}
 
 @end

@@ -9,8 +9,7 @@
 #import "MasterViewController.h"
 #import "DetailViewController.h"
 #import "StoryViewController.h"
-#import "Story.h"
-#import "StoryTableViewCell.h"
+#import "StoryModel.h"
 
 @interface MasterViewController () <StoryViewControllerDelegate>
 @property NSMutableArray *stories;
@@ -49,9 +48,9 @@
     }
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        Story *userStory = self.stories[indexPath.row];
+        NSDate *object = self.stories[indexPath.row];
         DetailViewController *controller = (DetailViewController *)[[segue destinationViewController] topViewController];
-        [controller setDetailStory:userStory];
+        [controller setDetailStory:object];
         controller.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
         controller.navigationItem.leftItemsSupplementBackButton = YES;
     }
@@ -68,14 +67,10 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    StoryTableViewCell *cell = (StoryTableViewCell *)[tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-    Story *story = (Story *)self.stories[(NSUInteger)indexPath.row];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    StoryModel *story = (StoryModel *)self.stories[(NSUInteger)indexPath.row];
     cell.textLabel.text = [NSString stringWithFormat:@"US [%@]", story.title];
     cell.detailTextLabel.text = [story.date description];
-    cell.score = story.score;
-//    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 80, 44)];
-//    label.text = story.score;
-//    cell.accessoryView = label;
     return cell;
 }
 
@@ -93,17 +88,14 @@
     }
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [self performSegueWithIdentifier:@"showDetail" sender:self];
-}
 
 #pragma mark - Story View Controller
 
-- (void)storyViewController:(StoryViewController *)viewController storyCreated:(Story *)story {
+- (void)storyViewController:(StoryViewController *)viewController storyCreated:(StoryModel *)story {
     [self insertNewStory:story];
 }
 
-- (void)insertNewStory:(Story *)story {
+- (void)insertNewStory:(StoryModel *)story {
     if (!self.stories) {
         self.stories = [[NSMutableArray alloc] init];
     }
