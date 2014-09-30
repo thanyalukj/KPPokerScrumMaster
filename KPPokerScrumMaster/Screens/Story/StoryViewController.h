@@ -9,10 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @class StoryViewController;
-@class Story;
+@class StoryModel;
 
 @protocol StoryViewControllerDelegate
-- (void)storyViewController:(StoryViewController *)viewController storyCreated:(Story *)story;
+- (void)storyViewController:(StoryViewController *)viewController storyCreated:(StoryModel *)story;
 @end
 
 @interface StoryViewController : UIViewController

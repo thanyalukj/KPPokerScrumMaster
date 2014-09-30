@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@class Story;
+@class StoryModel;
 
 @interface DetailViewController : UIViewController
 
-@property (strong, nonatomic) Story *detailStory;
+@property (strong, nonatomic) StoryModel *detailStory;
 @property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
 
 @end

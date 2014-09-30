@@ -7,7 +7,7 @@
 //
 
 #import "DetailViewController.h"
-#import "Story.h"
+#import "StoryModel.h"
 
 @interface DetailViewController () <UICollectionViewDataSource, UICollisionBehaviorDelegate>
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;

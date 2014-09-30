@@ -7,7 +7,7 @@
 //
 
 #import "StoryViewController.h"
-#import "Story.h"
+#import "StoryModel.h"
 
 @interface StoryViewController ()
 
@@ -34,7 +34,7 @@
 }
 - (IBAction)didTapSubmitButton:(id)sender {
     [_titleTextField resignFirstResponder];
-    Story *story = [[Story alloc] init];
+    StoryModel *story = [[StoryModel alloc] init];
     story.title = _titleTextField.text;
     story.date = [NSDate date];
     [self.delegate storyViewController:self storyCreated:story];

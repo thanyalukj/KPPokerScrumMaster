@@ -9,7 +9,7 @@
 #import "MasterViewController.h"
 #import "DetailViewController.h"
 #import "StoryViewController.h"
-#import "Story.h"
+#import "StoryModel.h"
 
 @interface MasterViewController () <StoryViewControllerDelegate>
 @property NSMutableArray *stories;
@@ -68,7 +68,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-    Story *story = (Story *)self.stories[(NSUInteger)indexPath.row];
+    StoryModel *story = (StoryModel *)self.stories[(NSUInteger)indexPath.row];
     cell.textLabel.text = [NSString stringWithFormat:@"US [%@]", story.title];
     cell.detailTextLabel.text = [story.date description];
     return cell;
@@ -91,11 +91,11 @@
 
 #pragma mark - Story View Controller
 
-- (void)storyViewController:(StoryViewController *)viewController storyCreated:(Story *)story {
+- (void)storyViewController:(StoryViewController *)viewController storyCreated:(StoryModel *)story {
     [self insertNewStory:story];
 }
 
-- (void)insertNewStory:(Story *)story {
+- (void)insertNewStory:(StoryModel *)story {
     if (!self.stories) {
         self.stories = [[NSMutableArray alloc] init];
     }

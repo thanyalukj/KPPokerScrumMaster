@@ -11,16 +11,28 @@
 		3044E424CBA4C019CB64F8DB /* StoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044EE41EC462DC8369E90FD /* StoryViewController.m */; };
 		3044E63944BB0B769296C88C /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044EEA706533C31A44CCDEE /* DetailViewController.m */; };
 		3044E7A36AC21D5AFDF116C1 /* UserCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044EC50B58D160C1434D40B /* UserCard.m */; };
-		3044EC659CD6AC928ACADFBF /* Story.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044E238A3FF3F4030F78808 /* Story.m */; };
 		3044ED21703A4446F59E4A48 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044E1389979183FB7C39EC0 /* MasterViewController.m */; };
 		9CE591E519D988DD00447DE2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE591E419D988DD00447DE2 /* main.m */; };
 		9CE591E819D988DD00447DE2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE591E719D988DD00447DE2 /* AppDelegate.m */; };
 		9CE591F119D988DD00447DE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CE591EF19D988DD00447DE2 /* Main.storyboard */; };
 		9CE591F319D988DD00447DE2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CE591F219D988DD00447DE2 /* Images.xcassets */; };
 		9CE591F619D988DD00447DE2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CE591F419D988DD00447DE2 /* LaunchScreen.xib */; };
-		9CE5920219D988DD00447DE2 /* KPPokerScrumMasterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE5920119D988DD00447DE2 /* KPPokerScrumMasterTests.m */; };
 		9CE5921119D9963500447DE2 /* UserCardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE5920F19D9963500447DE2 /* UserCardCell.m */; };
 		9CE5921219D9963500447DE2 /* UserCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CE5921019D9963500447DE2 /* UserCardCell.xib */; };
+		ACD091C29B0060FB59E265EA /* SessionsTable.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD097F91482045028B88C04 /* SessionsTable.m */; };
+		ACD0945EFD3BA0ED5CA36E45 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD09B15BDDB6A102E10F78D /* Constants.m */; };
+		ACD0948C086210C0A4EC50F0 /* SessionsInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD09F47B82D3F9580A278C0 /* SessionsInteractor.m */; };
+		ACD094AEC0DB4869672F9938 /* StoriesTable.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD09CEAF3B40847634A82E1 /* StoriesTable.m */; };
+		ACD095722A7BC5C9E7042D6A /* CurrentStoryTableTest.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD097EF75AE67DF0DCA1B6B /* CurrentStoryTableTest.m */; };
+		ACD095B8C71189076BA635B1 /* CurrentStoryTable.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD092C2807AAEE4F5F25749 /* CurrentStoryTable.m */; };
+		ACD095D5CAC0AC1C0056EE19 /* StoriesTableTest.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD09E15BB6487E1DE803EEA /* StoriesTableTest.m */; };
+		ACD098239F5197A0541E712D /* ScoreInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD09971D54CC6FE02E9D047 /* ScoreInteractor.m */; };
+		ACD098C8FD654B0A6FE25EF2 /* CurrentStoryInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD09A7743488D3BEBFDD4A2 /* CurrentStoryInteractor.m */; };
+		ACD09BFA58E45E081B89FEAF /* ScoreTableTest.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD09104A1C93705D7CFF65A /* ScoreTableTest.m */; };
+		ACD09CCEAF1D39C4F7B596AB /* SessionsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD09CC68D4013137635F42C /* SessionsTest.m */; };
+		ACD09D27C0A9E932329C42D1 /* ScoreTable.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD09A362B4185FA3ACDA976 /* ScoreTable.m */; };
+		ACD09EABDBC9F229FBD95AB2 /* StoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD09E303FEB019B10F7A840 /* StoryModel.m */; };
+		F0D4EF028A471A737FC1E027 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B1A932A5FD56D95F3A5727DE /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +47,7 @@
 
 /* Begin PBXFileReference section */
 		3044E07B8F9AB333624B540D /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
-		3044E1201AEAB030E6C5E973 /* Story.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Story.h; sourceTree = "<group>"; };
 		3044E1389979183FB7C39EC0 /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		3044E238A3FF3F4030F78808 /* Story.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Story.m; sourceTree = "<group>"; };
 		3044E260061967CC7E471996 /* UserCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserCard.h; sourceTree = "<group>"; };
 		3044E3D0D5113EF1D7DE874F /* StoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryViewController.h; sourceTree = "<group>"; };
 		3044E8C75B33D3925DF89778 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
@@ -56,10 +66,34 @@
 		9CE591F519D988DD00447DE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		9CE591FB19D988DD00447DE2 /* KPPokerScrumMasterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KPPokerScrumMasterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CE5920019D988DD00447DE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9CE5920119D988DD00447DE2 /* KPPokerScrumMasterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KPPokerScrumMasterTests.m; sourceTree = "<group>"; };
 		9CE5920E19D9963500447DE2 /* UserCardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserCardCell.h; sourceTree = "<group>"; };
 		9CE5920F19D9963500447DE2 /* UserCardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserCardCell.m; sourceTree = "<group>"; };
 		9CE5921019D9963500447DE2 /* UserCardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserCardCell.xib; sourceTree = "<group>"; };
+		ACD09027B58F9C559123206C /* StoriesTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoriesTable.h; sourceTree = "<group>"; };
+		ACD09104A1C93705D7CFF65A /* ScoreTableTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreTableTest.m; sourceTree = "<group>"; };
+		ACD0929FC5E6FA99CE807667 /* CurrentStoryTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrentStoryTable.h; sourceTree = "<group>"; };
+		ACD092C2807AAEE4F5F25749 /* CurrentStoryTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrentStoryTable.m; sourceTree = "<group>"; };
+		ACD09477B2E1FC2FE62D4233 /* SessionsTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SessionsTable.h; sourceTree = "<group>"; };
+		ACD097EF75AE67DF0DCA1B6B /* CurrentStoryTableTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrentStoryTableTest.m; sourceTree = "<group>"; };
+		ACD097F91482045028B88C04 /* SessionsTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionsTable.m; sourceTree = "<group>"; };
+		ACD0983A5704EDB90B3633AC /* StoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryModel.h; sourceTree = "<group>"; };
+		ACD09842471BC5B48F253A82 /* CurrentStoryInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrentStoryInteractor.h; sourceTree = "<group>"; };
+		ACD09971D54CC6FE02E9D047 /* ScoreInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreInteractor.m; sourceTree = "<group>"; };
+		ACD09A362B4185FA3ACDA976 /* ScoreTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreTable.m; sourceTree = "<group>"; };
+		ACD09A7743488D3BEBFDD4A2 /* CurrentStoryInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrentStoryInteractor.m; sourceTree = "<group>"; };
+		ACD09AB0F6365A98033B296D /* ScoreInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreInteractor.h; sourceTree = "<group>"; };
+		ACD09B15BDDB6A102E10F78D /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		ACD09B46ED74094B999C2C02 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		ACD09CADD9C6C5FA4E03DAA3 /* ScoreTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreTable.h; sourceTree = "<group>"; };
+		ACD09CC68D4013137635F42C /* SessionsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionsTest.m; sourceTree = "<group>"; };
+		ACD09CEAF3B40847634A82E1 /* StoriesTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoriesTable.m; sourceTree = "<group>"; };
+		ACD09E15BB6487E1DE803EEA /* StoriesTableTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoriesTableTest.m; sourceTree = "<group>"; };
+		ACD09E303FEB019B10F7A840 /* StoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryModel.m; sourceTree = "<group>"; };
+		ACD09EDD9376E4F8FDF66391 /* SessionsInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SessionsInteractor.h; sourceTree = "<group>"; };
+		ACD09F47B82D3F9580A278C0 /* SessionsInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionsInteractor.m; sourceTree = "<group>"; };
+		B1A932A5FD56D95F3A5727DE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF8ED3C7C57613641BBEDBBA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		C0470412871F9CBA1C7B38FA /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0D4EF028A471A737FC1E027 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,12 +148,12 @@
 		3044E91207BBE63875809DB0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				3044E238A3FF3F4030F78808 /* Story.m */,
-				3044E1201AEAB030E6C5E973 /* Story.h */,
 				3044EC50B58D160C1434D40B /* UserCard.m */,
 				3044E260061967CC7E471996 /* UserCard.h */,
 				3044E8C75B33D3925DF89778 /* Card.h */,
 				3044E07B8F9AB333624B540D /* Card.m */,
+				ACD09E303FEB019B10F7A840 /* StoryModel.m */,
+				ACD0983A5704EDB90B3633AC /* StoryModel.h */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -134,12 +169,31 @@
 			path = Screens;
 			sourceTree = "<group>";
 		};
+		71A5B09942FD0CCACA180465 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C0470412871F9CBA1C7B38FA /* Pods.debug.xcconfig */,
+				BF8ED3C7C57613641BBEDBBA /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8075A6DB14ACEF8257B03FE9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1A932A5FD56D95F3A5727DE /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9CE591D619D988DD00447DE2 = {
 			isa = PBXGroup;
 			children = (
 				9CE591E119D988DD00447DE2 /* KPPokerScrumMaster */,
 				9CE591FE19D988DD00447DE2 /* KPPokerScrumMasterTests */,
 				9CE591E019D988DD00447DE2 /* Products */,
+				71A5B09942FD0CCACA180465 /* Pods */,
+				8075A6DB14ACEF8257B03FE9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -162,6 +216,7 @@
 				9CE591F419D988DD00447DE2 /* LaunchScreen.xib */,
 				9CE591E219D988DD00447DE2 /* Supporting Files */,
 				3044EB28D9867A1379132A4A /* Screens */,
+				ACD09C51BDD715423D7CD9C7 /* Data */,
 			);
 			path = KPPokerScrumMaster;
 			sourceTree = "<group>";
@@ -178,8 +233,11 @@
 		9CE591FE19D988DD00447DE2 /* KPPokerScrumMasterTests */ = {
 			isa = PBXGroup;
 			children = (
-				9CE5920119D988DD00447DE2 /* KPPokerScrumMasterTests.m */,
 				9CE591FF19D988DD00447DE2 /* Supporting Files */,
+				ACD097EF75AE67DF0DCA1B6B /* CurrentStoryTableTest.m */,
+				ACD09E15BB6487E1DE803EEA /* StoriesTableTest.m */,
+				ACD09CC68D4013137635F42C /* SessionsTest.m */,
+				ACD09104A1C93705D7CFF65A /* ScoreTableTest.m */,
 			);
 			path = KPPokerScrumMasterTests;
 			sourceTree = "<group>";
@@ -192,6 +250,29 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		ACD09C51BDD715423D7CD9C7 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				ACD09027B58F9C559123206C /* StoriesTable.h */,
+				ACD09CADD9C6C5FA4E03DAA3 /* ScoreTable.h */,
+				ACD09B46ED74094B999C2C02 /* Constants.h */,
+				ACD097F91482045028B88C04 /* SessionsTable.m */,
+				ACD092C2807AAEE4F5F25749 /* CurrentStoryTable.m */,
+				ACD0929FC5E6FA99CE807667 /* CurrentStoryTable.h */,
+				ACD09A362B4185FA3ACDA976 /* ScoreTable.m */,
+				ACD09CEAF3B40847634A82E1 /* StoriesTable.m */,
+				ACD09477B2E1FC2FE62D4233 /* SessionsTable.h */,
+				ACD09B15BDDB6A102E10F78D /* Constants.m */,
+				ACD09A7743488D3BEBFDD4A2 /* CurrentStoryInteractor.m */,
+				ACD09842471BC5B48F253A82 /* CurrentStoryInteractor.h */,
+				ACD09971D54CC6FE02E9D047 /* ScoreInteractor.m */,
+				ACD09AB0F6365A98033B296D /* ScoreInteractor.h */,
+				ACD09F47B82D3F9580A278C0 /* SessionsInteractor.m */,
+				ACD09EDD9376E4F8FDF66391 /* SessionsInteractor.h */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -199,9 +280,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9CE5920519D988DD00447DE2 /* Build configuration list for PBXNativeTarget "KPPokerScrumMaster" */;
 			buildPhases = (
+				B0AAAD594DCBD136206CBBDF /* Check Pods Manifest.lock */,
 				9CE591DB19D988DD00447DE2 /* Sources */,
 				9CE591DC19D988DD00447DE2 /* Frameworks */,
 				9CE591DD19D988DD00447DE2 /* Resources */,
+				C817886F27F28FF5A6B94471 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -259,6 +342,8 @@
 			mainGroup = 9CE591D619D988DD00447DE2;
 			productRefGroup = 9CE591E019D988DD00447DE2 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+			);
 			projectRoot = "";
 			targets = (
 				9CE591DE19D988DD00447DE2 /* KPPokerScrumMaster */,
@@ -288,6 +373,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B0AAAD594DCBD136206CBBDF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C817886F27F28FF5A6B94471 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9CE591DB19D988DD00447DE2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -299,9 +417,17 @@
 				3044E63944BB0B769296C88C /* DetailViewController.m in Sources */,
 				3044E424CBA4C019CB64F8DB /* StoryViewController.m in Sources */,
 				9CE5921119D9963500447DE2 /* UserCardCell.m in Sources */,
-				3044EC659CD6AC928ACADFBF /* Story.m in Sources */,
 				3044E7A36AC21D5AFDF116C1 /* UserCard.m in Sources */,
 				3044E2095A7795765F9D4EB0 /* Card.m in Sources */,
+				ACD091C29B0060FB59E265EA /* SessionsTable.m in Sources */,
+				ACD095B8C71189076BA635B1 /* CurrentStoryTable.m in Sources */,
+				ACD09D27C0A9E932329C42D1 /* ScoreTable.m in Sources */,
+				ACD094AEC0DB4869672F9938 /* StoriesTable.m in Sources */,
+				ACD0945EFD3BA0ED5CA36E45 /* Constants.m in Sources */,
+				ACD09EABDBC9F229FBD95AB2 /* StoryModel.m in Sources */,
+				ACD098C8FD654B0A6FE25EF2 /* CurrentStoryInteractor.m in Sources */,
+				ACD098239F5197A0541E712D /* ScoreInteractor.m in Sources */,
+				ACD0948C086210C0A4EC50F0 /* SessionsInteractor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,7 +435,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CE5920219D988DD00447DE2 /* KPPokerScrumMasterTests.m in Sources */,
+				ACD095722A7BC5C9E7042D6A /* CurrentStoryTableTest.m in Sources */,
+				ACD095D5CAC0AC1C0056EE19 /* StoriesTableTest.m in Sources */,
+				ACD09CCEAF1D39C4F7B596AB /* SessionsTest.m in Sources */,
+				ACD09BFA58E45E081B89FEAF /* ScoreTableTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,21 +552,25 @@
 		};
 		9CE5920619D988DD00447DE2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0470412871F9CBA1C7B38FA /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KPPokerScrumMaster/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/** \"${PROJECT_DIR}/Pods\"/** \"${PROJECT_DIR}/Pods\"/** \"${PROJECT_DIR}/Pods\"/** \"${PROJECT_DIR}/Pods\"/** \"${PROJECT_DIR}/Pods\"/** \"${PROJECT_DIR}/Pods\"/** \"${PROJECT_DIR}/Pods\"/** \"${PROJECT_DIR}/Pods\"/** \"${PROJECT_DIR}/Pods\"/** \"${PROJECT_DIR}/Pods\"/**";
 			};
 			name = Debug;
 		};
 		9CE5920719D988DD00447DE2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF8ED3C7C57613641BBEDBBA /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KPPokerScrumMaster/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/** \"${PROJECT_DIR}/Pods\"/** \"${PROJECT_DIR}/Pods\"/** \"${PROJECT_DIR}/Pods\"/** \"${PROJECT_DIR}/Pods\"/** \"${PROJECT_DIR}/Pods\"/** \"${PROJECT_DIR}/Pods\"/** \"${PROJECT_DIR}/Pods\"/** \"${PROJECT_DIR}/Pods\"/** \"${PROJECT_DIR}/Pods\"/** \"${PROJECT_DIR}/Pods\"/**";
 			};
 			name = Release;
 		};
@@ -457,6 +590,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KPPokerScrumMaster.app/KPPokerScrumMaster";
+				USER_HEADER_SEARCH_PATHS = (
+					"\"${PROJECT_DIR}/Pods\"/**",
+				);
 			};
 			name = Debug;
 		};
@@ -472,6 +608,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KPPokerScrumMaster.app/KPPokerScrumMaster";
+				USER_HEADER_SEARCH_PATHS = (
+					"\"${PROJECT_DIR}/Pods\"/**",
+				);
 			};
 			name = Release;
 		};
