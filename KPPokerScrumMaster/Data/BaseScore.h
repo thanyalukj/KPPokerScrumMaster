@@ -8,9 +8,9 @@
 
 @interface BaseScore : NSObject
 
-@property (nonatomic, assign) NSString *storyId;
-@property (nonatomic, assign) NSString *personId;
-@property (nonatomic, assign) NSString *score;
+@property (nonatomic) NSString *storyId;
+@property (nonatomic) NSString *personId;
+@property (nonatomic) NSString *score;
 
 -(instancetype)initWithStoryId:(NSString *)storyId personId:(NSString *)personId score:(NSString *)score;
 

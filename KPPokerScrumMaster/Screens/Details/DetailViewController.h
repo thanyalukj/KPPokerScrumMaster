@@ -15,5 +15,6 @@
 @property (strong, nonatomic) StoryModel *detailStory;
 @property (nonatomic) NSArray *sessions;
 
+- (void)setStory:(StoryModel *)story sessions:(NSArray *)sessions;
 @end
 

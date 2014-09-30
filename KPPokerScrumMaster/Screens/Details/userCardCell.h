@@ -13,6 +13,6 @@
 @class BaseSession;
 
 @interface UserCardCell : UICollectionViewCell
-@property (nonatomic) UserCard *userCard;
+@property (nonatomic) NSString *score;
 @property (nonatomic) BaseSession *session;
 @end

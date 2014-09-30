@@ -53,8 +53,7 @@
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         StoryModel *story = self.stories[(NSUInteger)indexPath.row];
         DetailViewController *controller = (DetailViewController *)[[segue destinationViewController] topViewController];
-        [controller setSessions:self.sessions];
-        [controller setDetailStory:story];
+        [controller setStory:story sessions:self.sessions];
         controller.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
         controller.navigationItem.leftItemsSupplementBackButton = YES;
     }

@@ -26,10 +26,10 @@
     [currentStoryQuery
             continueWithExecutor:[BFExecutor mainThreadExecutor] withSuccessBlock:^id(BFTask *task) {
         if (task.error) {
-            NSLog(task.error.localizedDescription);
+            NSLog(@"%@", task.error.localizedDescription);
         } else {
             AWSDynamoDBPaginatedOutput *paginatedOutput = task.result;
-            NSMutableArray *scores = [[NSMutableArray alloc]init];
+            NSMutableArray *scores = [[NSMutableArray alloc] init];
             if (paginatedOutput.items){
                 [paginatedOutput.items enumerateObjectsUsingBlock:^(Score *score, NSUInteger idx, BOOL *stop) {
                     BaseScore *baseScore = [[BaseScore alloc] initWithStoryId:score.storyId personId:score.personId score:score.score];

@@ -27,4 +27,12 @@
     _cardImageView.image = [UIImage imageNamed:imageName];
 }
 
+- (void)setScore:(NSString *)score {
+    _score = score;
+    if (_score) {
+        NSString *imageName = [NSString stringWithFormat:@"card_%@", score];
+        _cardImageView.image = [UIImage imageNamed:imageName];
+    }
+}
+
 @end

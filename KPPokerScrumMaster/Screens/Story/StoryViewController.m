@@ -22,6 +22,7 @@
     [super viewDidLoad];
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(dismissView:)];
     self.navigationItem.rightBarButtonItem = addButton;
+    self.title = @"Enter story";
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -46,15 +47,5 @@
     [self.delegate storyViewController:self storyCreated:story];
     [self dismissView:self];
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
