@@ -7,11 +7,24 @@
 //
 
 #import "UserCardCell.h"
+#import "UserCard.h"
+#import "Card.h"
+#import "BaseSession.h"
 
-@implementation UserCardCell
+@implementation UserCardCell {    
+    __weak IBOutlet UILabel *_userLabel;
+    __weak IBOutlet UIImageView *_cardImageView;
+}
 
 - (void)awakeFromNib {
-    // Initialization code
+    [super awakeFromNib];
+}
+
+- (void)setSession:(BaseSession *)session {
+    _session = session;
+    _userLabel.text = _session.personId;
+    NSString *imageName = [NSString stringWithFormat:@"card_%@", @"?"];
+    _cardImageView.image = [UIImage imageNamed:imageName];
 }
 
 @end

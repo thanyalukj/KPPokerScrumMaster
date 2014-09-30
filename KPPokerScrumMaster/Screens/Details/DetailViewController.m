@@ -8,65 +8,67 @@
 
 #import "DetailViewController.h"
 #import "StoryModel.h"
+#import "SessionsInteractor.h"
+#import "UserCardCell.h"
+#import "SessionsTable.h"
+#import "UserCard.h"
+#import "Card.h"
+#import "BaseSession.h"
 
-@interface DetailViewController () <UICollectionViewDataSource, UICollisionBehaviorDelegate>
+@interface DetailViewController () <UICollectionViewDataSource, UICollectionViewDelegate, SessionsInteracting>
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
-
 @end
 
 @implementation DetailViewController
 
-- (id)initWithCoder:(NSCoder *)aDecoder {
-    self = [super initWithCoder:aDecoder];
-    if (self) {
-        [self configureCollectionView];
-    }
-    return self;
-}
-
 - (void)configureCollectionView {
+    UINib *cellNib = [UINib nibWithNibName:@"UserCardCell" bundle:nil];
+    [self.collectionView registerNib:cellNib forCellWithReuseIdentifier:@"userCardCell"];
 
+    self.collectionView.delegate = self;
+    self.collectionView.dataSource = self;
 }
-
 
 #pragma mark - Managing the detail item
 
-- (void)setDetailStory:(id)newDetailStory {
-    if (_detailStory != newDetailStory) {
-        _detailStory = newDetailStory;
-            
-        // Update the view.
+- (void)setSessions:(NSArray *)sessions {
+    if (_sessions != sessions) {
+        _sessions = sessions;
         [self configureView];
     }
 }
 
 - (void)configureView {
-    // Update the user interface for the detail item.
     if (self.detailStory) {
-        self.detailDescriptionLabel.text = [self.detailStory description];
+        self.title = _detailStory.title;
+        [self.collectionView reloadData];
     }
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    [self configureCollectionView];
     [self configureView];
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - UICollectionView
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 0;
+    return [self.sessions count];
 }
+
+static NSString *cellIdentifier = @"userCardCell";
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    return nil;
+    BaseSession *baseSession = (BaseSession *)self.sessions[(NSUInteger)indexPath.row];
+    UserCardCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];
+    [cell setSession:baseSession];
+    return cell;
 }
 
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    UserCard *card = _detailStory.userCards[(NSUInteger) indexPath.row];
+    _detailStory.score = [[card.card.content stringByReplacingOccurrencesOfString:@"shirt_" withString:@""] uppercaseString];
+}
 
 @end

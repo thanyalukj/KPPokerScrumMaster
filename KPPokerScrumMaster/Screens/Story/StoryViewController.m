@@ -8,6 +8,7 @@
 
 #import "StoryViewController.h"
 #import "StoryModel.h"
+#import "CurrentStoryInteractor.h"
 
 @interface StoryViewController ()
 
@@ -32,11 +33,16 @@
     [_titleTextField resignFirstResponder];
     [self.navigationController dismissViewControllerAnimated:YES completion:nil];
 }
+
 - (IBAction)didTapSubmitButton:(id)sender {
     [_titleTextField resignFirstResponder];
     StoryModel *story = [[StoryModel alloc] init];
     story.title = _titleTextField.text;
     story.date = [NSDate date];
+
+    CurrentStoryInteractor *storyInteractor = [[CurrentStoryInteractor alloc] initWithSessionId:@"1" currentStory:story.title];
+    [storyInteractor start];
+
     [self.delegate storyViewController:self storyCreated:story];
     [self dismissView:self];
 }

@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UserCardCell : UICollectionViewCell
+@class UserCard;
+@class SessionModel;
+@class BaseSession;
 
+@interface UserCardCell : UICollectionViewCell
+@property (nonatomic) UserCard *userCard;
+@property (nonatomic) BaseSession *session;
 @end

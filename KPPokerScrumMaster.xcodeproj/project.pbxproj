@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3044E2095A7795765F9D4EB0 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044E07B8F9AB333624B540D /* Card.m */; };
+		3044E0A36F0A520A177B8BB7 /* UserCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044E05A7A27F560152D9607 /* UserCard.m */; };
 		3044E424CBA4C019CB64F8DB /* StoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044EE41EC462DC8369E90FD /* StoryViewController.m */; };
 		3044E63944BB0B769296C88C /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044EEA706533C31A44CCDEE /* DetailViewController.m */; };
-		3044E7A36AC21D5AFDF116C1 /* UserCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044EC50B58D160C1434D40B /* UserCard.m */; };
+		3044E7EBB144C1EBFD33A3E2 /* StoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044E2DC74FC6E7F27FDF2EE /* StoryModel.m */; };
 		3044ED21703A4446F59E4A48 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044E1389979183FB7C39EC0 /* MasterViewController.m */; };
+		3044EF03D7DE91B82882990D /* StoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044E8B825B20FA80BFB313E /* StoryTableViewCell.m */; };
+		3044EFEC56B566A8AEF4E0D0 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044E190D4957B0338F87E95 /* Card.m */; };
 		9CE591E519D988DD00447DE2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE591E419D988DD00447DE2 /* main.m */; };
 		9CE591E819D988DD00447DE2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE591E719D988DD00447DE2 /* AppDelegate.m */; };
 		9CE591F119D988DD00447DE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CE591EF19D988DD00447DE2 /* Main.storyboard */; };
@@ -33,7 +35,6 @@
 		ACD09BFA58E45E081B89FEAF /* ScoreTableTest.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD09104A1C93705D7CFF65A /* ScoreTableTest.m */; };
 		ACD09CCEAF1D39C4F7B596AB /* SessionsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD09CC68D4013137635F42C /* SessionsTest.m */; };
 		ACD09D27C0A9E932329C42D1 /* ScoreTable.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD09A362B4185FA3ACDA976 /* ScoreTable.m */; };
-		ACD09EABDBC9F229FBD95AB2 /* StoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD09E303FEB019B10F7A840 /* StoryModel.m */; };
 		F0D4EF028A471A737FC1E027 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B1A932A5FD56D95F3A5727DE /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -48,12 +49,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3044E07B8F9AB333624B540D /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+		3044E05A7A27F560152D9607 /* UserCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserCard.m; sourceTree = "<group>"; };
 		3044E1389979183FB7C39EC0 /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		3044E260061967CC7E471996 /* UserCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserCard.h; sourceTree = "<group>"; };
+		3044E190D4957B0338F87E95 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+		3044E2DC74FC6E7F27FDF2EE /* StoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryModel.m; sourceTree = "<group>"; };
 		3044E3D0D5113EF1D7DE874F /* StoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryViewController.h; sourceTree = "<group>"; };
-		3044E8C75B33D3925DF89778 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
-		3044EC50B58D160C1434D40B /* UserCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserCard.m; sourceTree = "<group>"; };
+		3044E8B825B20FA80BFB313E /* StoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryTableViewCell.m; sourceTree = "<group>"; };
+		3044E962EC60BB2E6319173A /* StoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryTableViewCell.h; sourceTree = "<group>"; };
+		3044E9B0C10264F95C5AE22D /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		3044EBAD937EAA88847CC7EB /* UserCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserCard.h; sourceTree = "<group>"; };
+		3044EBAFE9F9EC481D4FFDC1 /* StoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryModel.h; sourceTree = "<group>"; };
 		3044EE41EC462DC8369E90FD /* StoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryViewController.m; sourceTree = "<group>"; };
 		3044EEA706533C31A44CCDEE /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		3044EF5C67D5795643381144 /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
@@ -80,7 +85,6 @@
 		ACD096717592D97861B78822 /* BaseScore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseScore.h; sourceTree = "<group>"; };
 		ACD097EF75AE67DF0DCA1B6B /* CurrentStoryTableTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrentStoryTableTest.m; sourceTree = "<group>"; };
 		ACD097F91482045028B88C04 /* SessionsTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionsTable.m; sourceTree = "<group>"; };
-		ACD0983A5704EDB90B3633AC /* StoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryModel.h; sourceTree = "<group>"; };
 		ACD09842471BC5B48F253A82 /* CurrentStoryInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrentStoryInteractor.h; sourceTree = "<group>"; };
 		ACD09971D54CC6FE02E9D047 /* ScoreInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreInteractor.m; sourceTree = "<group>"; };
 		ACD09A362B4185FA3ACDA976 /* ScoreTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreTable.m; sourceTree = "<group>"; };
@@ -94,7 +98,6 @@
 		ACD09D33C3BEE541184BC68D /* BaseSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseSession.h; sourceTree = "<group>"; };
 		ACD09DF727DE618F76FB344B /* BaseSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSession.m; sourceTree = "<group>"; };
 		ACD09E15BB6487E1DE803EEA /* StoriesTableTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoriesTableTest.m; sourceTree = "<group>"; };
-		ACD09E303FEB019B10F7A840 /* StoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryModel.m; sourceTree = "<group>"; };
 		ACD09EDD9376E4F8FDF66391 /* SessionsInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SessionsInteractor.h; sourceTree = "<group>"; };
 		ACD09F47B82D3F9580A278C0 /* SessionsInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionsInteractor.m; sourceTree = "<group>"; };
 		B1A932A5FD56D95F3A5727DE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,6 +129,8 @@
 			children = (
 				3044E1389979183FB7C39EC0 /* MasterViewController.m */,
 				3044EF5C67D5795643381144 /* MasterViewController.h */,
+				3044E8B825B20FA80BFB313E /* StoryTableViewCell.m */,
+				3044E962EC60BB2E6319173A /* StoryTableViewCell.h */,
 			);
 			path = Master;
 			sourceTree = "<group>";
@@ -151,28 +156,27 @@
 			path = Details;
 			sourceTree = "<group>";
 		};
-		3044E91207BBE63875809DB0 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				3044EC50B58D160C1434D40B /* UserCard.m */,
-				3044E260061967CC7E471996 /* UserCard.h */,
-				3044E8C75B33D3925DF89778 /* Card.h */,
-				3044E07B8F9AB333624B540D /* Card.m */,
-				ACD09E303FEB019B10F7A840 /* StoryModel.m */,
-				ACD0983A5704EDB90B3633AC /* StoryModel.h */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		3044EB28D9867A1379132A4A /* Screens */ = {
 			isa = PBXGroup;
 			children = (
 				3044E5AC9A38754A8CE542F8 /* Master */,
 				3044E844AD6BCB0F6E8A4DF2 /* Details */,
 				3044E72D52848DAB3E9770DB /* Story */,
-				3044E91207BBE63875809DB0 /* Models */,
 			);
 			path = Screens;
+			sourceTree = "<group>";
+		};
+		3044EB605E64A3575DB38EEB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3044E05A7A27F560152D9607 /* UserCard.m */,
+				3044EBAD937EAA88847CC7EB /* UserCard.h */,
+				3044E9B0C10264F95C5AE22D /* Card.h */,
+				3044E190D4957B0338F87E95 /* Card.m */,
+				3044E2DC74FC6E7F27FDF2EE /* StoryModel.m */,
+				3044EBAFE9F9EC481D4FFDC1 /* StoryModel.h */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		71A5B09942FD0CCACA180465 /* Pods */ = {
@@ -223,6 +227,7 @@
 				9CE591E219D988DD00447DE2 /* Supporting Files */,
 				3044EB28D9867A1379132A4A /* Screens */,
 				ACD09C51BDD715423D7CD9C7 /* Data */,
+				3044EB605E64A3575DB38EEB /* Models */,
 			);
 			path = KPPokerScrumMaster;
 			sourceTree = "<group>";
@@ -427,17 +432,18 @@
 				3044E63944BB0B769296C88C /* DetailViewController.m in Sources */,
 				3044E424CBA4C019CB64F8DB /* StoryViewController.m in Sources */,
 				9CE5921119D9963500447DE2 /* UserCardCell.m in Sources */,
-				3044E7A36AC21D5AFDF116C1 /* UserCard.m in Sources */,
-				3044E2095A7795765F9D4EB0 /* Card.m in Sources */,
+				3044EF03D7DE91B82882990D /* StoryTableViewCell.m in Sources */,
 				ACD091C29B0060FB59E265EA /* SessionsTable.m in Sources */,
 				ACD095B8C71189076BA635B1 /* CurrentStoryTable.m in Sources */,
 				ACD09D27C0A9E932329C42D1 /* ScoreTable.m in Sources */,
 				ACD094AEC0DB4869672F9938 /* StoriesTable.m in Sources */,
 				ACD0945EFD3BA0ED5CA36E45 /* Constants.m in Sources */,
-				ACD09EABDBC9F229FBD95AB2 /* StoryModel.m in Sources */,
 				ACD098C8FD654B0A6FE25EF2 /* CurrentStoryInteractor.m in Sources */,
 				ACD098239F5197A0541E712D /* ScoreInteractor.m in Sources */,
 				ACD0948C086210C0A4EC50F0 /* SessionsInteractor.m in Sources */,
+				3044E0A36F0A520A177B8BB7 /* UserCard.m in Sources */,
+				3044EFEC56B566A8AEF4E0D0 /* Card.m in Sources */,
+				3044E7EBB144C1EBFD33A3E2 /* StoryModel.m in Sources */,
 				ACD09912826389A8C61A5132 /* BaseSession.m in Sources */,
 				ACD09B4E2B89A3351449BD16 /* BaseScore.m in Sources */,
 			);

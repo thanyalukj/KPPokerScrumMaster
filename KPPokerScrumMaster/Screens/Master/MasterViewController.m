@@ -10,9 +10,12 @@
 #import "DetailViewController.h"
 #import "StoryViewController.h"
 #import "StoryModel.h"
+#import "SessionsInteractor.h"
 
-@interface MasterViewController () <StoryViewControllerDelegate>
+@interface MasterViewController () <StoryViewControllerDelegate, SessionsInteracting>
 @property NSMutableArray *stories;
+@property (nonatomic) NSArray *sessions;
+@property (nonatomic) SessionsInteractor *sessionInteractor;
 @end
 
 @implementation MasterViewController
@@ -48,9 +51,10 @@
     }
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        NSDate *object = self.stories[indexPath.row];
+        StoryModel *story = self.stories[(NSUInteger)indexPath.row];
         DetailViewController *controller = (DetailViewController *)[[segue destinationViewController] topViewController];
-        [controller setDetailStory:object];
+        [controller setSessions:self.sessions];
+        [controller setDetailStory:story];
         controller.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
         controller.navigationItem.leftItemsSupplementBackButton = YES;
     }
@@ -88,6 +92,10 @@
     }
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [self.sessionInteractor start];
+}
+
 
 #pragma mark - Story View Controller
 
@@ -102,6 +110,21 @@
     [self.stories insertObject:story atIndex:0];
     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
     [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+}
+
+
+#pragma mark - sessions
+- (SessionsInteractor *)sessionInteractor {
+    if (!_sessionInteractor) {
+        _sessionInteractor = [[SessionsInteractor alloc] initWithSessionId:@"1"];
+        _sessionInteractor.delegate = self;
+    }
+    return _sessionInteractor;
+}
+
+- (void)setSessions:(NSArray *)sessions {
+    _sessions = sessions;
+    [self performSegueWithIdentifier:@"showDetail" sender:self];
 }
 
 @end

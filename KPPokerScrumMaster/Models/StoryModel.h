@@ -10,4 +10,5 @@
 @property (nonatomic) NSString *title;
 @property (nonatomic) NSDate *date;
 @property (nonatomic) NSMutableArray *userCards;
+@property (nonatomic) NSString *score;
 @end

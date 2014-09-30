@@ -13,7 +13,7 @@
 @interface DetailViewController : UIViewController
 
 @property (strong, nonatomic) StoryModel *detailStory;
-@property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+@property (nonatomic) NSArray *sessions;
 
 @end
 
