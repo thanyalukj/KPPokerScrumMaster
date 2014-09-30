@@ -27,7 +27,7 @@
     [currentStoryQuery
             continueWithExecutor:[BFExecutor mainThreadExecutor] withSuccessBlock:^id(BFTask *task) {
         if (task.error) {
-            NSLog(task.error.localizedDescription);
+            NSLog(@"%@", task.error.localizedDescription);
         } else {
             AWSDynamoDBPaginatedOutput *paginatedOutput = task.result;
             NSMutableArray *sessions = [[NSMutableArray alloc]init];
