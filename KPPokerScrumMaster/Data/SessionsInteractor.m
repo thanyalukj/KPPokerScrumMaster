@@ -6,6 +6,7 @@
 #import "SessionsInteractor.h"
 #import "AWSDynamoDBObjectMapper.h"
 #import "SessionsTable.h"
+#import "SessionModel.h"
 
 
 @implementation SessionsInteractor {
@@ -22,19 +23,30 @@
 
 - (void)start {
     SessionsTable *sessionsTable = [[SessionsTable alloc]init];
-    BFTask *currentStoryQuery = [sessionsTable fetchSessionsWithSessionId:@"newSessionId"];
+    BFTask *currentStoryQuery = [sessionsTable fetchSessionsWithSessionId:@"1"];
     [currentStoryQuery
             continueWithExecutor:[BFExecutor mainThreadExecutor] withSuccessBlock:^id(BFTask *task) {
         if (task.error) {
-            NSLog(task.error.localizedDescription);
+            NSLog(@"%@", task.error.localizedDescription);
         } else {
             AWSDynamoDBPaginatedOutput *paginatedOutput = task.result;
-            NSArray *sessions = (Session *)paginatedOutput.items;
+            NSArray *sessions = [self sessionModelsFromItems:paginatedOutput.items];
             [_delegate setSessions:sessions];
         }
         return nil;
     }];
 
+}
+
+- (NSArray *)sessionModelsFromItems:(NSArray *)items {
+    NSMutableArray *sessions = [NSMutableArray new];
+    for (Session *session in items) {
+        SessionModel *sessionModel = [[SessionModel alloc] init];
+        sessionModel.sessionId  = session.sessionId;
+        sessionModel.personId = session.personId;
+        [sessions addObject:sessionModel];
+    }
+    return sessions;
 }
 
 @end

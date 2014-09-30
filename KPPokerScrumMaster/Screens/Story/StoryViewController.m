@@ -8,6 +8,7 @@
 
 #import "StoryViewController.h"
 #import "StoryModel.h"
+#import "CurrentStoryInteractor.h"
 
 @interface StoryViewController ()
 
@@ -38,7 +39,10 @@
     StoryModel *story = [[StoryModel alloc] init];
     story.title = _titleTextField.text;
     story.date = [NSDate date];
-    story.score = @"100";
+
+    CurrentStoryInteractor *storyInteractor = [[CurrentStoryInteractor alloc] initWithSessionId:@"1" currentStory:story.title];
+    [storyInteractor start];
+
     [self.delegate storyViewController:self storyCreated:story];
     [self dismissView:self];
 }

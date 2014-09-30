@@ -9,6 +9,7 @@
 #import "UserCardCell.h"
 #import "UserCard.h"
 #import "Card.h"
+#import "SessionModel.h"
 
 @implementation UserCardCell {    
     __weak IBOutlet UILabel *_userLabel;
@@ -19,9 +20,9 @@
     [super awakeFromNib];
 }
 
-- (void)setUserCard:(UserCard *)userCard {
-    _userCard = userCard;
-    _userLabel.text = _userCard.username;
+- (void)setSession:(SessionModel *)session {
+    _session = session;
+    _userLabel.text = _session.personId;
     NSString *imageName = [NSString stringWithFormat:@"card_%@", @"?"];
     _cardImageView.image = [UIImage imageNamed:imageName];
 }

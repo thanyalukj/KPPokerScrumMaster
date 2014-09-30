@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @class UserCard;
+@class SessionModel;
 
 @interface UserCardCell : UICollectionViewCell
 @property (nonatomic) UserCard *userCard;
+@property (nonatomic) SessionModel *session;
 @end
