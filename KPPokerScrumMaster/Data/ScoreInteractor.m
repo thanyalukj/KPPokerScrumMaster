@@ -6,6 +6,7 @@
 #import "ScoreInteractor.h"
 #import "AWSDynamoDBObjectMapper.h"
 #import "ScoreTable.h"
+#import "BaseScore.h"
 
 
 @implementation ScoreInteractor {
@@ -28,7 +29,13 @@
             NSLog(task.error.localizedDescription);
         } else {
             AWSDynamoDBPaginatedOutput *paginatedOutput = task.result;
-            NSArray *scores = (Score *)paginatedOutput.items;
+            NSMutableArray *scores = [[NSMutableArray alloc]init];
+            if (paginatedOutput.items){
+                [paginatedOutput.items enumerateObjectsUsingBlock:^(Score *score, NSUInteger idx, BOOL *stop) {
+                    BaseScore *baseScore = [[BaseScore alloc] initWithStoryId:score.storyId personId:score.personId score:score.score];
+                    [scores addObject:baseScore];
+                }];
+            }
             [_delegate setScores:scores];
         }
         return nil;

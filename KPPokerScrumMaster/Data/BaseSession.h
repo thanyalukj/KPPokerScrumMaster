@@ -10,4 +10,7 @@
 
 @property (nonatomic) NSString *personId;
 @property (nonatomic) NSString *sessionId;
+
+-(instancetype)initWithSessionId:(NSString *)sessionId personId:(NSString *) personId;
+
 @end

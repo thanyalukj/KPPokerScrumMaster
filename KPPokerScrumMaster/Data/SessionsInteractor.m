@@ -31,12 +31,10 @@
         } else {
             AWSDynamoDBPaginatedOutput *paginatedOutput = task.result;
             NSMutableArray *sessions = [[NSMutableArray alloc]init];
-
             if (paginatedOutput.items){
                 [paginatedOutput.items enumerateObjectsUsingBlock:^(Session *session, NSUInteger idx, BOOL *stop) {
-                    BaseSession *baseSession = [[BaseSession alloc]init];
-                    baseSession.personId = session.personId;
-                    baseSession.sessionId = session.sessionId;
+                    BaseSession *baseSession = [[BaseSession alloc] initWithSessionId:session.sessionId personId:session.personId];
+                    [sessions addObject:baseSession];
                 }];
             }
             [_delegate setSessions:sessions];

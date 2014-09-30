@@ -29,6 +29,7 @@
 		ACD098239F5197A0541E712D /* ScoreInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD09971D54CC6FE02E9D047 /* ScoreInteractor.m */; };
 		ACD098C8FD654B0A6FE25EF2 /* CurrentStoryInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD09A7743488D3BEBFDD4A2 /* CurrentStoryInteractor.m */; };
 		ACD09912826389A8C61A5132 /* BaseSession.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD09DF727DE618F76FB344B /* BaseSession.m */; };
+		ACD09B4E2B89A3351449BD16 /* BaseScore.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD09171022B950B0092294D /* BaseScore.m */; };
 		ACD09BFA58E45E081B89FEAF /* ScoreTableTest.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD09104A1C93705D7CFF65A /* ScoreTableTest.m */; };
 		ACD09CCEAF1D39C4F7B596AB /* SessionsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD09CC68D4013137635F42C /* SessionsTest.m */; };
 		ACD09D27C0A9E932329C42D1 /* ScoreTable.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD09A362B4185FA3ACDA976 /* ScoreTable.m */; };
@@ -72,9 +73,11 @@
 		9CE5921019D9963500447DE2 /* UserCardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserCardCell.xib; sourceTree = "<group>"; };
 		ACD09027B58F9C559123206C /* StoriesTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoriesTable.h; sourceTree = "<group>"; };
 		ACD09104A1C93705D7CFF65A /* ScoreTableTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreTableTest.m; sourceTree = "<group>"; };
+		ACD09171022B950B0092294D /* BaseScore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseScore.m; sourceTree = "<group>"; };
 		ACD0929FC5E6FA99CE807667 /* CurrentStoryTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrentStoryTable.h; sourceTree = "<group>"; };
 		ACD092C2807AAEE4F5F25749 /* CurrentStoryTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrentStoryTable.m; sourceTree = "<group>"; };
 		ACD09477B2E1FC2FE62D4233 /* SessionsTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SessionsTable.h; sourceTree = "<group>"; };
+		ACD096717592D97861B78822 /* BaseScore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseScore.h; sourceTree = "<group>"; };
 		ACD097EF75AE67DF0DCA1B6B /* CurrentStoryTableTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrentStoryTableTest.m; sourceTree = "<group>"; };
 		ACD097F91482045028B88C04 /* SessionsTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionsTable.m; sourceTree = "<group>"; };
 		ACD0983A5704EDB90B3633AC /* StoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryModel.h; sourceTree = "<group>"; };
@@ -274,6 +277,8 @@
 				ACD09EDD9376E4F8FDF66391 /* SessionsInteractor.h */,
 				ACD09DF727DE618F76FB344B /* BaseSession.m */,
 				ACD09D33C3BEE541184BC68D /* BaseSession.h */,
+				ACD09171022B950B0092294D /* BaseScore.m */,
+				ACD096717592D97861B78822 /* BaseScore.h */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -434,6 +439,7 @@
 				ACD098239F5197A0541E712D /* ScoreInteractor.m in Sources */,
 				ACD0948C086210C0A4EC50F0 /* SessionsInteractor.m in Sources */,
 				ACD09912826389A8C61A5132 /* BaseSession.m in Sources */,
+				ACD09B4E2B89A3351449BD16 /* BaseScore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

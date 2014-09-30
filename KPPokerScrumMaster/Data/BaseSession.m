@@ -9,4 +9,14 @@
 @implementation BaseSession {
 
 }
+
+-(instancetype)initWithSessionId:(NSString *)sessionId personId:(NSString *) personId {
+    if (self = [super init]){
+        _sessionId = sessionId;
+        _personId = personId;
+    }
+
+    return self;
+}
+
 @end
