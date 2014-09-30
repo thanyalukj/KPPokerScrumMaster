@@ -131,7 +131,7 @@
                             <outlet property="delegate" destination="7bK-jq-Zjz" id="RA6-mI-bju"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Master" id="Zdf-7t-Un8"/>
+                    <navigationItem key="navigationItem" title="Stories" id="Zdf-7t-Un8"/>
                     <connections>
                         <segue destination="qEt-Gp-lD3" kind="presentation" identifier="presentStory" modalPresentationStyle="formSheet" id="QPG-uf-n6L"/>
                     </connections>
