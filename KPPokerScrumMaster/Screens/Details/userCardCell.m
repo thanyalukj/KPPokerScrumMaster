@@ -23,8 +23,7 @@
 - (void)setSession:(BaseSession *)session {
     _session = session;
     _userLabel.text = _session.personId;
-    NSString *imageName = [NSString stringWithFormat:@"card_%@", @"?"];
-    _cardImageView.image = [UIImage imageNamed:imageName];
+    _cardImageView.image = [UIImage imageNamed:@"card_small_timer"];
 }
 
 - (void)setScore:(NSString *)score {

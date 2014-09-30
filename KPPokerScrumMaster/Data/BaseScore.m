@@ -10,14 +10,12 @@
 
 }
 
--(instancetype)initWithStoryId:(NSString *)storyId personId:(NSString *)personId score:(NSString *)score {
-
-    if (self = [super init]){
+- (instancetype)initWithStoryId:(NSString *)storyId personId:(NSString *)personId score:(NSString *)score {
+    if (self = [super init]) {
         _storyId = storyId;
         _personId = personId;
         _score = score;
     }
-
     return self;
 }
 

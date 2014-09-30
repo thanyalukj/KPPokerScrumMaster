@@ -37,6 +37,8 @@
 
 #pragma mark - Managing the detail item
 - (void)setStory:(StoryModel *)story sessions:(NSArray *)sessions {
+    [_refreshTimer invalidate];
+    _refreshTimer = nil;
     [self setSessions:sessions];
     [self setDetailStory:story];
 }
@@ -51,20 +53,24 @@
 - (void)setDetailStory:(StoryModel *)detailStory {
     if (_detailStory != detailStory) {
         _detailStory = detailStory;
+        [self configureScoreInteractor];
         [self.scoreInteractor start];
     }
 }
 
+- (void)configureScoreInteractor {
+    self.scoreInteractor = [[ScoreInteractor alloc] initWithStoryId:_detailStory.title];
+    self.scoreInteractor.delegate = self;
+}
+
 - (ScoreInteractor *)scoreInteractor {
-    if (!_scoreInteractor) {
-        _scoreInteractor = [[ScoreInteractor alloc] initWithStoryId:_detailStory.title];
-        _scoreInteractor.delegate = self;
-    }
+    _scoreInteractor = [[ScoreInteractor alloc] initWithStoryId:_detailStory.title];
+    _scoreInteractor.delegate = self;
     return _scoreInteractor;
 }
 
 - (void)reloadData {
-    if (self.detailStory && self.sessions) {
+    if (self.detailStory && self.sessions && self.scores) {
         self.title = _detailStory.title;
         [self.collectionView reloadData];
     }
@@ -72,9 +78,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [_refreshTimer invalidate];
     [self configureCollectionView];
     [self reloadData];
 }
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [_refreshTimer invalidate];
+    _refreshTimer = nil;
+    self.scoreInteractor = nil;
+}
+
 
 #pragma mark - UICollectionView
 
@@ -129,7 +144,9 @@ static NSString *cellIdentifier = @"userCardCell";
                                                     repeats:NO];
 }
 - (void)refreshScores {
-    [self.scoreInteractor start];
+    if ([self.scoreInteractor.storyId isEqualToString:_detailStory.title]) {
+        [self.scoreInteractor start];
+    }
 }
 
 @end

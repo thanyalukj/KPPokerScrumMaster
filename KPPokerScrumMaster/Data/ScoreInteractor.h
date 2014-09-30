@@ -14,7 +14,7 @@
 @interface ScoreInteractor : NSObject
 
 @property (nonatomic, weak) id <ScoreInteracting> delegate;
-
+@property (nonatomic) NSString *storyId;
 - (instancetype)initWithStoryId:(NSString *)storyId;
 
 - (void)start;

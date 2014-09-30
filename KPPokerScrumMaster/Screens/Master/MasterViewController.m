@@ -30,7 +30,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
 
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(presentStoryViewController)];
@@ -92,9 +91,15 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [self configureSessionInteractor];
     [self.sessionInteractor start];
 }
 
+- (void)configureSessionInteractor {
+    self.sessionInteractor = nil;
+    self.sessionInteractor = [[SessionsInteractor alloc] initWithSessionId:@"1"];
+    self.sessionInteractor.delegate = self;
+}
 
 #pragma mark - Story View Controller
 
@@ -113,13 +118,6 @@
 
 
 #pragma mark - sessions
-- (SessionsInteractor *)sessionInteractor {
-    if (!_sessionInteractor) {
-        _sessionInteractor = [[SessionsInteractor alloc] initWithSessionId:@"1"];
-        _sessionInteractor.delegate = self;
-    }
-    return _sessionInteractor;
-}
 
 - (void)setSessions:(NSArray *)sessions {
     _sessions = sessions;
