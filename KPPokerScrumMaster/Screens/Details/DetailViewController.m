@@ -14,6 +14,7 @@
 #import "UserCard.h"
 #import "Card.h"
 #import "SessionModel.h"
+#import "BaseSession.h"
 
 @interface DetailViewController () <UICollectionViewDataSource, UICollectionViewDelegate, SessionsInteracting>
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
@@ -60,9 +61,9 @@
 static NSString *cellIdentifier = @"userCardCell";
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    SessionModel *sessionModel = self.sessions[(NSUInteger)indexPath.row];
+    BaseSession *baseSession = (BaseSession *)self.sessions[(NSUInteger)indexPath.row];
     UserCardCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];
-    [cell setSession:sessionModel];
+    [cell setSession:baseSession];
     return cell;
 }
 

@@ -31,6 +31,7 @@
 		ACD095D5CAC0AC1C0056EE19 /* StoriesTableTest.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD09E15BB6487E1DE803EEA /* StoriesTableTest.m */; };
 		ACD098239F5197A0541E712D /* ScoreInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD09971D54CC6FE02E9D047 /* ScoreInteractor.m */; };
 		ACD098C8FD654B0A6FE25EF2 /* CurrentStoryInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD09A7743488D3BEBFDD4A2 /* CurrentStoryInteractor.m */; };
+		ACD09912826389A8C61A5132 /* BaseSession.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD09DF727DE618F76FB344B /* BaseSession.m */; };
 		ACD09BFA58E45E081B89FEAF /* ScoreTableTest.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD09104A1C93705D7CFF65A /* ScoreTableTest.m */; };
 		ACD09CCEAF1D39C4F7B596AB /* SessionsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD09CC68D4013137635F42C /* SessionsTest.m */; };
 		ACD09D27C0A9E932329C42D1 /* ScoreTable.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD09A362B4185FA3ACDA976 /* ScoreTable.m */; };
@@ -94,6 +95,8 @@
 		ACD09CADD9C6C5FA4E03DAA3 /* ScoreTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreTable.h; sourceTree = "<group>"; };
 		ACD09CC68D4013137635F42C /* SessionsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionsTest.m; sourceTree = "<group>"; };
 		ACD09CEAF3B40847634A82E1 /* StoriesTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoriesTable.m; sourceTree = "<group>"; };
+		ACD09D33C3BEE541184BC68D /* BaseSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseSession.h; sourceTree = "<group>"; };
+		ACD09DF727DE618F76FB344B /* BaseSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSession.m; sourceTree = "<group>"; };
 		ACD09E15BB6487E1DE803EEA /* StoriesTableTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoriesTableTest.m; sourceTree = "<group>"; };
 		ACD09EDD9376E4F8FDF66391 /* SessionsInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SessionsInteractor.h; sourceTree = "<group>"; };
 		ACD09F47B82D3F9580A278C0 /* SessionsInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionsInteractor.m; sourceTree = "<group>"; };
@@ -279,6 +282,8 @@
 				ACD09AB0F6365A98033B296D /* ScoreInteractor.h */,
 				ACD09F47B82D3F9580A278C0 /* SessionsInteractor.m */,
 				ACD09EDD9376E4F8FDF66391 /* SessionsInteractor.h */,
+				ACD09DF727DE618F76FB344B /* BaseSession.m */,
+				ACD09D33C3BEE541184BC68D /* BaseSession.h */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -440,6 +445,7 @@
 				3044EFEC56B566A8AEF4E0D0 /* Card.m in Sources */,
 				3044E7EBB144C1EBFD33A3E2 /* StoryModel.m in Sources */,
 				3044E4B93A00085C958550E4 /* SessionModel.m in Sources */,
+				ACD09912826389A8C61A5132 /* BaseSession.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

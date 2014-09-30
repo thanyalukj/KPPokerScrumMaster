@@ -10,8 +10,9 @@
 
 @class UserCard;
 @class SessionModel;
+@class BaseSession;
 
 @interface UserCardCell : UICollectionViewCell
 @property (nonatomic) UserCard *userCard;
-@property (nonatomic) SessionModel *session;
+@property (nonatomic) BaseSession *session;
 @end

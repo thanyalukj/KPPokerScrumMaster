@@ -123,7 +123,6 @@
 }
 
 - (void)setSessions:(NSArray *)sessions {
-    NSLog(@"set session");
     _sessions = sessions;
     [self performSegueWithIdentifier:@"showDetail" sender:self];
 }
